@@ -27,7 +27,9 @@ DOCK_ICON_PRESENT="FALSE"
 TITLE="Quit Application"
 DESCRIPTION="Greetings Heartland Area Education Agency Staff
 
-You are attempting to install $APP_NAME which is already installed and currently running.  Please return to $APP_NAME and save your work and quit the application BEFORE returning here and clicking the \"OK\" button to proceed with the update. Caution: your work could be lost if you don't save it and quit $APP_NAME before clicking the \"OK\" button.
+You are attempting to install $APP_NAME which is already installed and currently running.  Please return to $APP_NAME and save your work and quit the application BEFORE returning here and clicking the \"OK\" button to proceed with the update. 
+
+Caution: your work could be lost if you don't save it and quit $APP_NAME before clicking the \"OK\" button.
 
 The app will automatically quit and the install start once the countdown timer reaches zero or you click the \"OK\" button.
 
