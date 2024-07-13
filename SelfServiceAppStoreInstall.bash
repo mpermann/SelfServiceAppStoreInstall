@@ -2,8 +2,8 @@
 
 # SelfServiceAppStoreInstall.bash
 # Version: 1.0.1
-# Created: 07-13-2024 by Michael Permann
-# Modified: 
+# Created: 06-03-2022 by Michael Permann
+# Modified: 07-13-2024
 # Purpose: The script is for installing a Mac App Store app from Self Service. If app is running, the user will
 # be notified to save unsaved work and quit the app before proceeding. There will be a countdown timer
 # in seconds that will automatically quit the app and start the install if the user doesn't act themselves.
@@ -11,7 +11,6 @@
 # parameter 6 is the Self Service policy URL to install the app, parameter 7 is the countdown timer in 
 # seconds. The script is relatively basic and can't currently kill more than one process or patch 
 # more than one app.
-
 
 APP_NAME=$4
 APP_PROCESS_NAME=$5
