@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # SelfServiceAppStoreInstall.bash
-# Version: 1.0
-# Created: 06-03-2022 by Michael Permann
+# Version: 1.0.1
+# Created: 07-13-2024 by Michael Permann
 # Modified: 
 # Purpose: The script is for installing a Mac App Store app from Self Service. If app is running, the user will
 # be notified to save unsaved work and quit the app before proceeding. There will be a countdown timer
@@ -19,13 +19,13 @@ SELF_SERVICE_POLICY_URL=$6
 TIMER=$7
 CURRENT_USER=$(scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /loginwindow/ { print $3 }')
 USER_ID=$(/usr/bin/id -u "$CURRENT_USER")
-LOGO="/Library/Application Support/HeartlandAEA11/Images/HeartlandLogo@512px.png"
+LOGO="/Library/Management/PCC/Images/PCC1Logo@512px.png"
 JAMF_HELPER="/Library/Application Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper"
 JAMF_BINARY=$(which jamf)
-DOCKUTIL="/Library/Application Support/HeartlandAEA11/Scripts/dockutil"
+DOCKUTIL="/usr/local/bin/dockutil"
 DOCK_ICON_PRESENT="FALSE"
 TITLE="Quit Application"
-DESCRIPTION="Greetings Heartland Area Education Agency Staff
+DESCRIPTION="Greetings PERMANNent Computer Consulting LLC Staff
 
 You are attempting to install $APP_NAME which is already installed and currently running.  Please return to $APP_NAME and save your work and quit the application BEFORE returning here and clicking the \"OK\" button to proceed with the update. 
 
